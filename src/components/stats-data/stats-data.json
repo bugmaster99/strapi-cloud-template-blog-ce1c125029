@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_stats_data_stats_data",
+  "info": {
+    "displayName": "statsData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "showStatsData": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "stats": {
+      "displayName": "stats",
+      "type": "component",
+      "repeatable": true,
+      "component": "stats.stats",
+      "required": true,
+      "max": 4,
+      "min": 4
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_overview_badge_overview_badges",
+  "info": {
+    "displayName": "overview-badge"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "showOverviewBadge": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

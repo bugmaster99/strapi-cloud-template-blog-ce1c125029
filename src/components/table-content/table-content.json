@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_table_content_table_contents",
+  "info": {
+    "displayName": "tableContent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cellTitleOne": {
+      "type": "string",
+      "required": true
+    },
+    "cellLogoOne": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cellLogoTwo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cellLogoThree": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

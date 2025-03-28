@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_career_impact_card_career_impact_cards",
+  "info": {
+    "displayName": "careerImpactCard"
+  },
+  "options": {},
+  "attributes": {
+    "feedback": {
+      "type": "text",
+      "required": true
+    },
+    "profileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "fromPosition": {
+      "type": "string",
+      "required": true
+    },
+    "toPosition": {
+      "type": "string",
+      "required": true
+    },
+    "companyLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

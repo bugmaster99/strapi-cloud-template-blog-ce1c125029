@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_form_control_form_controls",
+  "info": {
+    "displayName": "formControl",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "required": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "errorMessage": {
+      "type": "string",
+      "required": false
+    },
+    "placeholder": {
+      "type": "string",
+      "required": false
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "select-options.select-options"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "short-text",
+        "long-text",
+        "email",
+        "date",
+        "phone-number",
+        "numeric-text",
+        "multiple-choice"
+      ]
+    },
+    "databaseKey": {
+      "type": "string"
+    }
+  }
+}

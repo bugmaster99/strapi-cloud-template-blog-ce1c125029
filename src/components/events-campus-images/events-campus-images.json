@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_events_campus_images_events_campus_images",
+  "info": {
+    "displayName": "eventsCampusImages",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eventsCampusLifeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_business_value_business_values",
+  "info": {
+    "displayName": "businessValue"
+  },
+  "options": {},
+  "attributes": {
+    "studentJourney": {
+      "type": "string",
+      "required": true
+    },
+    "virohanOffers": {
+      "type": "string"
+    },
+    "partnerOffers": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "Landing Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "displayName": "lpHero",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-hero.lp-hero",
+      "required": true
+    },
+    "speciality": {
+      "displayName": "lpSpeciality",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-speciality.lp-speciality",
+      "required": true
+    },
+    "courses": {
+      "displayName": "lpCourses",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-courses.lp-courses",
+      "required": true
+    },
+    "whatSetsUsApart": {
+      "displayName": "lpSetsApart",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-sets-apart.lp-sets-apart",
+      "required": true
+    },
+    "journey": {
+      "displayName": "lpJouney",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-jouney.lp-jouney",
+      "required": true
+    },
+    "watchUsYourself": {
+      "displayName": "lpWatchUs",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-watch-us.lp-watch-us",
+      "required": true
+    },
+    "campuses": {
+      "displayName": "lpCampuses",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-campuses.lp-campuses",
+      "required": true
+    },
+    "whyStudentsLoveUs": {
+      "displayName": "lpLoveUs",
+      "type": "component",
+      "repeatable": false,
+      "component": "lp-love-us.lp-love-us",
+      "required": true
+    },
+    "googleAnalytics": {
+      "type": "boolean",
+      "default": true
+    },
+    "facebookAnalytics": {
+      "type": "boolean",
+      "default": true
+    },
+    "eskimiAnalytics": {
+      "type": "boolean",
+      "default": true
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}

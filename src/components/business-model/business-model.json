@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_business_model_business_models",
+  "info": {
+    "displayName": "BusinessModel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "businessValue": {
+      "displayName": "businessValue",
+      "type": "component",
+      "repeatable": true,
+      "component": "business-value.business-value",
+      "min": 4,
+      "max": 6
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Business Model"
+    }
+  }
+}

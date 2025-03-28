@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_hero_heroes",
+  "info": {
+    "displayName": "hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "keywords": {
+      "displayName": "titleKeywords",
+      "type": "component",
+      "repeatable": true,
+      "component": "title-keywords.title-keywords",
+      "required": true
+    },
+    "images": {
+      "displayName": "images",
+      "type": "component",
+      "repeatable": true,
+      "component": "images.images",
+      "required": true
+    },
+    "showHero": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

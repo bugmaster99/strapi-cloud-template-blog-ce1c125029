@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_lp_watch_us_youself_list_lp_watch_us_youself_lists",
+  "info": {
+    "displayName": "lpWatchUsYouselfList"
+  },
+  "options": {},
+  "attributes": {
+    "youtubeUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

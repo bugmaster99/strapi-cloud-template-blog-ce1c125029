@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_talent_acquisition_talent",
+  "info": {
+    "displayName": "talentAcquisition",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "logos.logos",
+      "required": true,
+      "min": 20
+    },
+    "showTalentAcquisitionData": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "backgroundText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

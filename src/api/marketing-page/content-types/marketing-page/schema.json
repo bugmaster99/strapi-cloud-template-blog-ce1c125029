@@ -1,0 +1,258 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marketing_pages",
+  "info": {
+    "singularName": "marketing-page",
+    "pluralName": "marketing-pages",
+    "displayName": "Marketing Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "menu": {
+      "type": "json",
+      "required": true
+    },
+    "showHero": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "firstFormTitle": {
+      "type": "string",
+      "required": false
+    },
+    "firstFormDescription": {
+      "type": "text",
+      "required": false
+    },
+    "secondFormTitle": {
+      "type": "string",
+      "required": true
+    },
+    "secondFormDescription": {
+      "type": "text",
+      "required": true
+    },
+    "formLevel": {
+      "type": "integer",
+      "required": true,
+      "max": 2,
+      "min": 0
+    },
+    "showFeeSection": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "feeSectionTitle": {
+      "type": "string",
+      "required": true
+    },
+    "feeSectionSubtitle": {
+      "type": "text",
+      "required": false
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::campus.campus",
+      "inversedBy": "marketing_pages"
+    },
+    "testimonialSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "testiminial-data.testimonial-data",
+      "required": true
+    },
+    "placementSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "talent-acquisition.talent-acquisition",
+      "required": true
+    },
+    "primaryFooter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer",
+      "required": true
+    },
+    "secondaryFooter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer",
+      "required": true
+    },
+    "showSecondaryFooter": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "secondaryFooterTitle": {
+      "type": "string",
+      "required": true
+    },
+    "secondaryFooterSubtitle": {
+      "type": "richtext",
+      "required": true
+    },
+    "secondaryFooterTitleUrl": {
+      "type": "string",
+      "required": true
+    },
+    "facebookUrl": {
+      "type": "string",
+      "required": true
+    },
+    "linkedinUrl": {
+      "type": "string",
+      "required": true
+    },
+    "youtubeUrl": {
+      "type": "string",
+      "required": true
+    },
+    "instagramUrl": {
+      "type": "string",
+      "required": true
+    },
+    "googleAnalytics": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "facebookAnalytics": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "microsoftAnalytics": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "heroHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "feeSectionHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "campusSectionHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "testimonialSectionHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "placementSectionHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "campusSectionTitle": {
+      "type": "string",
+      "required": true
+    },
+    "showCampusSection": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showEmiOptions": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "marketingPageType": {
+      "type": "enumeration",
+      "enum": [
+        "Offline",
+        "Online"
+      ],
+      "required": true
+    },
+    "center": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::center.center"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    },
+    "showPrimaryFooter": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "courseFees": {
+      "displayName": "courseFee",
+      "type": "component",
+      "repeatable": true,
+      "component": "course-fee.course-fee",
+      "required": true,
+      "max": 10,
+      "min": 3
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "heroBulletPoints": {
+      "displayName": "heroBulletPoints",
+      "type": "component",
+      "repeatable": true,
+      "component": "hero-bullet-points.hero-bullet-points",
+      "max": 4,
+      "min": 0
+    },
+    "cities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::city.city"
+    },
+    "citiesTitle": {
+      "type": "string",
+      "required": true
+    },
+    "citiesHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showOurCampusCities": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "leadFormCtaText": {
+      "type": "string",
+      "required": true
+    },
+    "activeFormType": {
+      "type": "enumeration",
+      "enum": [
+        "form1",
+        "form2"
+      ],
+      "default": "form1"
+    }
+  }
+}

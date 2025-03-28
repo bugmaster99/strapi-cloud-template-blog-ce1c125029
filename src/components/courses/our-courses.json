@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_courses_our_courses",
+  "info": {
+    "displayName": "ourCourses",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "courses": {
+      "displayName": "courses",
+      "type": "component",
+      "repeatable": true,
+      "component": "course.courses"
+    },
+    "headerName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

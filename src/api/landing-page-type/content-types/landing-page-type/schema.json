@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_page_types",
+  "info": {
+    "singularName": "landing-page-type",
+    "pluralName": "landing-page-types",
+    "displayName": "Landing Page Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_lp_speciality_lp_specialities",
+  "info": {
+    "displayName": "lpSpeciality",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "showSpeciality": {
+      "type": "boolean",
+      "required": true
+    },
+    "specialityList": {
+      "displayName": "lpSpecialityList",
+      "type": "component",
+      "repeatable": true,
+      "component": "lp-speciality-list.lp-speciality-list",
+      "max": 4,
+      "min": 2
+    }
+  }
+}

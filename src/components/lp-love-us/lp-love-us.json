@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_lp_love_us_lp_loveuses",
+  "info": {
+    "displayName": "lpLoveUs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "whyStudentsLoveUsList": {
+      "displayName": "lpLoveUsList",
+      "type": "component",
+      "repeatable": true,
+      "component": "lp-love-us-list.lp-love-us-list",
+      "max": 2,
+      "min": 2
+    },
+    "showWhyStudentsLoveUs": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_lp_sets_apart_lp_sets_aparts",
+  "info": {
+    "displayName": "lpSetsApart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "showWhatSetsUsApart": {
+      "type": "boolean",
+      "required": true
+    },
+    "whatSetsUsApartList": {
+      "displayName": "lpSetsApartList",
+      "type": "component",
+      "repeatable": true,
+      "component": "lp-sets-apart-list.lp-sets-apart-list"
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

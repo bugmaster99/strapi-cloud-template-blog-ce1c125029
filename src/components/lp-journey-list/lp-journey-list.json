@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_lp_journey_list_lp_journey_lists",
+  "info": {
+    "displayName": "lpJourneyList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

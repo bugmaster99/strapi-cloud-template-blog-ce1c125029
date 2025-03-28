@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_lp_centers_lp_centers",
+  "info": {
+    "displayName": "lpCenters"
+  },
+  "options": {},
+  "attributes": {
+    "centerName": {
+      "type": "string",
+      "required": true
+    },
+    "centerId": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

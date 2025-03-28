@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_long_text_long_texts",
+  "info": {
+    "displayName": "longText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "required": true
+    },
+    "errorMessage": {
+      "type": "string",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "nextQuestionId": {
+      "type": "integer",
+      "required": true
+    },
+    "questionId": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    }
+  }
+}

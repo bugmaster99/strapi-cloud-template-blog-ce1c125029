@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_options_options",
+  "info": {
+    "displayName": "options",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "nextQuestionId": {
+      "type": "integer",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_course_courses",
+  "info": {
+    "displayName": "courses",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "status": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "redirectUrl": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

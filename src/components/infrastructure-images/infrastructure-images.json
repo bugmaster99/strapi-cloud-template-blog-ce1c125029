@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_infrastructure_images_infrastructure_images",
+  "info": {
+    "displayName": "infrastructureImages",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "infrastructureImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

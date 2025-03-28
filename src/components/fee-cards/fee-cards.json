@@ -1,0 +1,80 @@
+{
+  "collectionName": "components_fee_cards_fee_cards",
+  "info": {
+    "displayName": "fee-cards",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headerBackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "titleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "descriptionFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "subtitleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "strikePriceTitle": {
+      "type": "string"
+    },
+    "finalPriceTitle": {
+      "type": "string",
+      "required": true
+    },
+    "priceSubtitle": {
+      "type": "string",
+      "required": true
+    },
+    "feeCardBodyDescription": {
+      "displayName": "body-description ",
+      "type": "component",
+      "repeatable": true,
+      "component": "body-description.body-description",
+      "required": true,
+      "max": 6,
+      "min": 3
+    },
+    "brochureUrl": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "detailPageUrl": {
+      "type": "string",
+      "required": true
+    },
+    "feeBadge": {
+      "type": "component",
+      "repeatable": false,
+      "component": "badge.badge"
+    }
+  }
+}

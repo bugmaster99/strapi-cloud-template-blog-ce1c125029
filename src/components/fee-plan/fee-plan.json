@@ -1,0 +1,63 @@
+{
+  "collectionName": "components_fee_plan_fee_plans",
+  "info": {
+    "displayName": "feePlan",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "subtitleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "feesCardBody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "body-description.body-description",
+      "required": true,
+      "max": 6,
+      "min": 3
+    },
+    "feeBadge": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program-overview-badge.program-overview-badge"
+    },
+    "emis": {
+      "type": "component",
+      "repeatable": true,
+      "component": "emis.emis",
+      "max": 4,
+      "min": 1
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "strikedPrice": {
+      "type": "string"
+    }
+  }
+}

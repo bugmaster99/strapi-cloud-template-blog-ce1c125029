@@ -1,0 +1,74 @@
+{
+  "collectionName": "components_lp_hero_lp_heroes",
+  "info": {
+    "displayName": "lpHero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "imgDesktop": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imgMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "showHero": {
+      "type": "boolean",
+      "required": true
+    },
+    "center": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::center.center"
+    },
+    "formLevel": {
+      "type": "integer",
+      "required": true,
+      "default": 2,
+      "min": 1,
+      "max": 2
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    },
+    "firstFormTitle": {
+      "type": "string",
+      "required": true
+    },
+    "firstFormDescription": {
+      "type": "text",
+      "required": true
+    },
+    "secondFormTitle": {
+      "type": "string"
+    },
+    "secondFormDescription": {
+      "type": "string"
+    },
+    "landingPageType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::landing-page-type.landing-page-type"
+    }
+  }
+}

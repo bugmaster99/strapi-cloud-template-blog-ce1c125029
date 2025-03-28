@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_short_text_short_texts",
+  "info": {
+    "displayName": "shortText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "errorMessage": {
+      "type": "string",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "nextQuestionId": {
+      "type": "integer",
+      "required": true
+    },
+    "questionId": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    }
+  }
+}

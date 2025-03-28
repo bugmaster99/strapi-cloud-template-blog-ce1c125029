@@ -1,0 +1,131 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campuses",
+  "info": {
+    "singularName": "campus",
+    "pluralName": "campuses",
+    "displayName": "Campus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "stats": {
+      "type": "string",
+      "required": true
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program-family-detail-page.program-family-detail-page",
+      "inversedBy": "campuses"
+    },
+    "videoUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "phoneNo": {
+      "type": "biginteger",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "marketing_pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::marketing-page.marketing-page",
+      "mappedBy": "campuses"
+    },
+    "centrId": {
+      "type": "integer",
+      "min": 0
+    },
+    "batchStartDate": {
+      "type": "date"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "media": {
+      "displayName": "media",
+      "type": "component",
+      "repeatable": false,
+      "component": "campus-media.media"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "Andhra Pradesh",
+        "Arunachal Pradesh",
+        "Assam",
+        "Bihar",
+        "Chandigarh (UT)",
+        "Chhattisgarh",
+        "Dadra and Nagar Haveli (UT)",
+        "Daman and Diu (UT)",
+        "Delhi (NCT)",
+        "Goa",
+        "Gujarat",
+        "Haryana",
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Jharkhand",
+        "Karnataka",
+        "Kerala",
+        "Lakshadweep (UT)",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Odisha",
+        "Puducherry (UT)",
+        "Punjab",
+        "Rajasthan",
+        "Sikkim",
+        "Tamil Nadu",
+        "Telangana",
+        "Tripura",
+        "Uttarakhand",
+        "Uttar Pradesh",
+        "West Bengal"
+      ]
+    }
+  }
+}

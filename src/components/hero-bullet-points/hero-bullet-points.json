@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_hero_bullet_points_hero_bullet_points",
+  "info": {
+    "displayName": "heroBulletPoints",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "firstText": {
+      "type": "string",
+      "required": true
+    },
+    "secondText": {
+      "type": "string",
+      "required": true
+    },
+    "showBulletItem": {
+      "type": "boolean",
+      "default": true
+    },
+    "firstTextBold": {
+      "type": "boolean",
+      "default": false
+    },
+    "secondTextBold": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

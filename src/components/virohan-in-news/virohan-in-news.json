@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_virohan_in_news_virohan_in_news",
+  "info": {
+    "displayName": "virohan InNews",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "newsCard": {
+      "displayName": "newsCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "news-card.news-card",
+      "required": true,
+      "max": 3,
+      "min": 3
+    },
+    "viewMoreUrl": {
+      "type": "string",
+      "required": true
+    },
+    "showVirohanInNews": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_seo_information_seo_informations",
+  "info": {
+    "displayName": "SeoInformation",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

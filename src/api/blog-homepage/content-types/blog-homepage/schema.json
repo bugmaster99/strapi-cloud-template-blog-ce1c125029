@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_homepages",
+  "info": {
+    "singularName": "blog-homepage",
+    "pluralName": "blog-homepages",
+    "displayName": "Blog Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "featuredCategory": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "blogBanner": {
+      "displayName": "blogBanner",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-banner.blog-banner",
+      "required": true,
+      "max": 2,
+      "min": 0
+    }
+  }
+}

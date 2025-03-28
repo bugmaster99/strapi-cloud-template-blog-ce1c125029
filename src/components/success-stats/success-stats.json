@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_success_stats_success_stats",
+  "info": {
+    "displayName": "successStats",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "showStatsData": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stats.stats",
+      "required": true,
+      "max": 4,
+      "min": 4
+    }
+  }
+}

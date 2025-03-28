@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_how_we_teach_card_how_we_teach_cards",
+  "info": {
+    "displayName": "howWeTeachCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

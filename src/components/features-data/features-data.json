@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_features_data_features_data",
+  "info": {
+    "displayName": "featuresData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features.features",
+      "required": true,
+      "max": 3,
+      "min": 3
+    },
+    "showFeaturesData": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

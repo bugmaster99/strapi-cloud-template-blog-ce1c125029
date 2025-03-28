@@ -1,0 +1,216 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_family_detail_pages",
+  "info": {
+    "singularName": "program-family-detail-page",
+    "pluralName": "program-family-detail-pages",
+    "displayName": "Program Family Detail Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "programName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "overviewHeaderName": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "showOverview": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "overviewTitle": {
+      "type": "string",
+      "required": true
+    },
+    "overviewSubtitle": {
+      "type": "text",
+      "required": true
+    },
+    "overviewBadge": {
+      "displayName": "programOverviewBadge",
+      "type": "component",
+      "repeatable": true,
+      "component": "program-overview-badge.program-overview-badge",
+      "required": true,
+      "max": 3,
+      "min": 0
+    },
+    "overviewDescription": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.description",
+      "required": true,
+      "max": 5,
+      "min": 3
+    },
+    "featuresCard": {
+      "displayName": "featuresCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "features-card.features-card",
+      "required": true,
+      "max": 4,
+      "min": 4
+    },
+    "showFeatures": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showWhyVirohan": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "whyVirohanTitle": {
+      "type": "string",
+      "required": true
+    },
+    "whyVirohanContentBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-course-content-block.content-block"
+    },
+    "tableTitle": {
+      "type": "string",
+      "required": true
+    },
+    "tableColTitleOne": {
+      "type": "string",
+      "required": true
+    },
+    "tableColTitleThree": {
+      "type": "string",
+      "required": true
+    },
+    "tableColTitleTwo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tableContent": {
+      "displayName": "tableContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "table-content.table-content",
+      "required": true,
+      "max": 15,
+      "min": 5
+    },
+    "showHowWeTeach": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "whyVirohanHeaderName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "howWeTeachImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "howWeTeachCard": {
+      "displayName": "howWeTeachCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "how-we-teach-card.how-we-teach-card",
+      "required": true,
+      "max": 6,
+      "min": 3
+    },
+    "campusAvailableHeaderName": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "howWeTeachHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showCampusAvailable": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "campusAvailableTitle": {
+      "type": "string",
+      "required": true
+    },
+    "showFees": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "feesHeaderName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "feesTitlte": {
+      "type": "string",
+      "required": true
+    },
+    "feesSubtitle": {
+      "type": "text",
+      "required": true
+    },
+    "feesCard": {
+      "displayName": "feesCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "fees-card.fees-card",
+      "required": true,
+      "max": 5,
+      "min": 2
+    },
+    "program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program-family-page.program-family-page",
+      "inversedBy": "courses"
+    },
+    "howWeTeachTitle": {
+      "type": "string",
+      "required": true
+    },
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "seo-information.seo-information"
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::campus.campus",
+      "mappedBy": "courses"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "brochureUrl": {
+      "type": "string",
+      "required": false,
+      "default": "https://viro.hn/b2c"
+    }
+  }
+}

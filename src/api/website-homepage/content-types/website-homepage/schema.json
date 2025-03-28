@@ -1,0 +1,169 @@
+{
+  "kind": "collectionType",
+  "collectionName": "website_homepages",
+  "info": {
+    "singularName": "website-homepage",
+    "pluralName": "website-homepages",
+    "displayName": "website Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menu": {
+      "type": "json",
+      "required": true
+    },
+    "statsData": {
+      "displayName": "statsData",
+      "type": "component",
+      "repeatable": false,
+      "component": "stats-data.stats-data",
+      "required": true
+    },
+    "featuresData": {
+      "displayName": "featuresData",
+      "type": "component",
+      "repeatable": false,
+      "component": "features-data.features-data",
+      "required": true
+    },
+    "journeyData": {
+      "displayName": "journeyData",
+      "type": "component",
+      "repeatable": false,
+      "component": "journey-data.journey-data",
+      "required": true
+    },
+    "affiliationData": {
+      "displayName": "affiliationData",
+      "type": "component",
+      "repeatable": false,
+      "component": "affiliation-data.affiliation-data",
+      "required": true
+    },
+    "testimonialData": {
+      "displayName": "testimonialData",
+      "type": "component",
+      "repeatable": false,
+      "component": "testiminial-data.testimonial-data",
+      "required": true
+    },
+    "talentAcquisitionData": {
+      "displayName": "talentAcquisition",
+      "type": "component",
+      "repeatable": false,
+      "component": "talent-acquisition.talent-acquisition",
+      "required": true
+    },
+    "virohanInNews": {
+      "displayName": "virohan InNews",
+      "type": "component",
+      "repeatable": false,
+      "component": "virohan-in-news.virohan-in-news",
+      "required": true
+    },
+    "downloadApp": {
+      "displayName": "downloadApp",
+      "type": "component",
+      "repeatable": false,
+      "component": "download-app.download-app",
+      "required": true
+    },
+    "banner": {
+      "displayName": "banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner",
+      "required": true
+    },
+    "hero": {
+      "displayName": "hero",
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "primaryFooter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer",
+      "required": true,
+      "max": 4,
+      "min": 3
+    },
+    "secondaryFooter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer",
+      "required": true,
+      "max": 4,
+      "min": 4
+    },
+    "showPrimaryFooter": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showSecondaryFooter": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "secondaryFooterTitle": {
+      "type": "string",
+      "required": true
+    },
+    "secondaryFooterSubtitle": {
+      "type": "richtext",
+      "required": true
+    },
+    "secondaryFooterTitleUrl": {
+      "type": "string",
+      "required": true
+    },
+    "facebookUrl": {
+      "type": "string",
+      "required": true
+    },
+    "linkedinUrl": {
+      "type": "string",
+      "required": true
+    },
+    "youtubeUrl": {
+      "type": "string",
+      "required": true
+    },
+    "instagramUrl": {
+      "type": "string",
+      "required": true
+    },
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "seo-information.seo-information"
+    },
+    "googleAnalytics": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "facebookAnalytics": {
+      "type": "boolean",
+      "default": true
+    },
+    "microsoftAnalytics": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

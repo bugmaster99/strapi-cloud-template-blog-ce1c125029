@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_choose_virohan_choose_virohans",
+  "info": {
+    "displayName": "chooseVirohan",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "virohanValues": {
+      "displayName": "virohanValues",
+      "type": "component",
+      "repeatable": true,
+      "component": "virohan-values.virohan-values"
+    },
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "headerName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

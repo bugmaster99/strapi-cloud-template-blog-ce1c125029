@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_our_success_our_successes",
+  "info": {
+    "displayName": "ourSuccess",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SuccessComp": {
+      "displayName": "SuccessComp",
+      "type": "component",
+      "repeatable": true,
+      "component": "partner-success.success-comp",
+      "max": 4
+    },
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Success"
+    }
+  }
+}

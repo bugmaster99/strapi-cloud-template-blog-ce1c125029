@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_state_campus_map_state_campus_mappings",
+  "info": {
+    "displayName": "stateCampusMapping",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "state": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::state.state"
+    },
+    "isVisible": {
+      "type": "boolean",
+      "default": true
+    },
+    "campuses": {
+      "displayName": "stateCampuses",
+      "type": "component",
+      "repeatable": true,
+      "component": "campus.state-campuses"
+    }
+  }
+}

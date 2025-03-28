@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "campus_visits",
+  "info": {
+    "singularName": "campus-visit",
+    "pluralName": "campus-visits",
+    "displayName": "Campus Visit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "googleAnalytics": {
+      "type": "boolean",
+      "default": true
+    },
+    "facebookAnalytics": {
+      "type": "boolean",
+      "default": true
+    },
+    "eskimiAnalytics": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

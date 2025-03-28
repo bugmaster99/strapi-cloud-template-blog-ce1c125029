@@ -1,0 +1,275 @@
+{
+  "kind": "singleType",
+  "collectionName": "all_campuses",
+  "info": {
+    "singularName": "all-campus",
+    "pluralName": "all-campuses",
+    "displayName": "All Campus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "campusesImgCarousel": {
+      "displayName": "imgCarousel",
+      "type": "component",
+      "repeatable": true,
+      "component": "img-carousel.img-carousel",
+      "max": 3,
+      "min": 3
+    },
+    "infrastructureTitle": {
+      "type": "string",
+      "required": true
+    },
+    "infrastructureSubtitle": {
+      "type": "text",
+      "required": false
+    },
+    "infrastructureImages": {
+      "displayName": "infrastructureImages",
+      "type": "component",
+      "repeatable": true,
+      "component": "infrastructure-images.infrastructure-images",
+      "max": 4,
+      "min": 4
+    },
+    "blendedLearningTitle": {
+      "type": "string",
+      "required": true
+    },
+    "blendedLearningPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet-point.bullet-point",
+      "max": 3,
+      "min": 3,
+      "required": true
+    },
+    "blendedLearningCtaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "campusDeciderTitle": {
+      "type": "string",
+      "required": true
+    },
+    "campusDeciderDescription": {
+      "type": "text",
+      "required": true
+    },
+    "campusDeciderCtaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "eventsCampusLifeTitle": {
+      "type": "string",
+      "required": true
+    },
+    "eventsCampusLifeSubtitle": {
+      "type": "text",
+      "required": true
+    },
+    "eventsCampusLifeCards": {
+      "displayName": "eventsCampusImages",
+      "type": "component",
+      "repeatable": true,
+      "component": "events-campus-images.events-campus-images",
+      "max": 3,
+      "min": 3,
+      "required": true
+    },
+    "lifeAtVirohanImages": {
+      "displayName": "LifeAtVirohan",
+      "type": "component",
+      "repeatable": true,
+      "component": "life-at-virohan.life-at-virohan",
+      "max": 4,
+      "min": 4,
+      "required": true
+    },
+    "mentoBannerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "mentoBannerDescription": {
+      "type": "text",
+      "required": true
+    },
+    "mentoBannerCtaTitle": {
+      "type": "string"
+    },
+    "mentoRedirectUrl": {
+      "type": "string",
+      "required": true
+    },
+    "expertsBannerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "expertsBannerDescription": {
+      "type": "text"
+    },
+    "expertsBannerCtaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "cities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::city.city"
+    },
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-information.seo-information",
+      "required": true
+    },
+    "campusImgCarouselHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "citiesHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showCampusImgCarousel": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showCities": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "infrastructureHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showInfrastructure": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "blendedLearningHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showBlendedLearning": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "upcomingBatchesHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showUpcomingBatches": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "campusDeciderHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showCampusDecider": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "eventsCampusLifeHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showEventsCampusLife": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "lifeAtVirohanHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showLifeAtVirohan": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "mentoBannerHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showMentoBanner": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "expertsBannerHeaderName": {
+      "type": "string",
+      "required": true
+    },
+    "showExpertsBanner": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "upcomingBatchesTitle": {
+      "type": "string",
+      "required": true
+    },
+    "citiesTitle": {
+      "type": "string",
+      "required": true
+    },
+    "citiesSubtitle": {
+      "type": "text",
+      "required": true
+    },
+    "campusesTitleFirstSegment": {
+      "type": "string",
+      "required": true
+    },
+    "campusesCtaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "campusesTitleSecondSegment": {
+      "type": "string",
+      "required": true
+    },
+    "campusesTitleThirdSegment": {
+      "type": "string",
+      "required": true
+    },
+    "campusesHeroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "chooseVirohan": {
+      "displayName": "chooseVirohan",
+      "type": "component",
+      "repeatable": false,
+      "component": "choose-virohan.choose-virohan"
+    },
+    "ourCourses": {
+      "displayName": "ourCourses",
+      "type": "component",
+      "repeatable": false,
+      "component": "courses.our-courses"
+    },
+    "citySection": {
+      "displayName": "citySection",
+      "type": "component",
+      "repeatable": false,
+      "component": "city.city-section"
+    }
+  }
+}

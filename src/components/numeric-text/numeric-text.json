@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_numeric_text_numeric_texts",
+  "info": {
+    "displayName": "numericText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "errorMessage": {
+      "type": "string",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "nextQuestionId": {
+      "type": "integer",
+      "required": false
+    },
+    "questionId": {
+      "type": "integer",
+      "unique": false,
+      "required": true
+    },
+    "numericOptions": {
+      "displayName": "numericOptions",
+      "type": "component",
+      "repeatable": true,
+      "component": "numeric-options.numeric-options",
+      "max": 6,
+      "min": 1,
+      "required": false
+    }
+  }
+}

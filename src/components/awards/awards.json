@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_awards_awards",
+  "info": {
+    "displayName": "Awards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Awards & Spotlights"
+    },
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "Award": {
+      "displayName": "award",
+      "type": "component",
+      "repeatable": true,
+      "component": "award.award"
+    }
+  }
+}

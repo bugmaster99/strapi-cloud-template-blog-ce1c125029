@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_bullet_point_bullet_points",
+  "info": {
+    "displayName": "bullet-point"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

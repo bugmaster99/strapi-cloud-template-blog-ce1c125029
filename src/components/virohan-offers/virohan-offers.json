@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_virohan_offers_virohan_offers",
+  "info": {
+    "displayName": "virohanOffers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "firstOffer": {
+      "type": "string",
+      "required": true
+    },
+    "secondOther": {
+      "type": "string",
+      "required": true
+    },
+    "thirdOffer": {
+      "type": "string"
+    },
+    "fourthOffer": {
+      "type": "string",
+      "required": true
+    },
+    "brochureLink": {
+      "type": "string",
+      "required": true
+    },
+    "titleColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

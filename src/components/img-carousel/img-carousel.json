@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_img_carousel_img_carousels",
+  "info": {
+    "displayName": "imgCarousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "campusImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

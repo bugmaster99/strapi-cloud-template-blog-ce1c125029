@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_lp_campuses_lp_campuses",
+  "info": {
+    "displayName": "lpCampuses"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "showCampuses": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

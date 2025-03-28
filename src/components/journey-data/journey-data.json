@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_journey_data_journey_data",
+  "info": {
+    "displayName": "journeyData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "cards": {
+      "displayName": "cards",
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.cards",
+      "required": true,
+      "max": 6,
+      "min": 5
+    },
+    "showJourneyData": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

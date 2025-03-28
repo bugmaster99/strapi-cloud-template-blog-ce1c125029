@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_program_overview_badge_program_overview_badges",
+  "info": {
+    "displayName": "programOverviewBadge",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

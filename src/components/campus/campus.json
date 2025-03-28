@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_campus_campuses",
+  "info": {
+    "displayName": "campus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "centerName": {
+      "type": "string",
+      "required": true
+    },
+    "centerId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

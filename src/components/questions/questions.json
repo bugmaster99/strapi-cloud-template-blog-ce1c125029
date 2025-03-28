@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_questions_questions",
+  "info": {
+    "displayName": "questions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "questionId": {
+      "type": "integer"
+    },
+    "option": {
+      "displayName": "options",
+      "type": "component",
+      "repeatable": true,
+      "component": "options.options"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_life_at_virohan_life_at_virohans",
+  "info": {
+    "displayName": "LifeAtVirohan",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "lifeAtVirohanImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "videoThumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

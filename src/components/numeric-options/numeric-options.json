@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_numeric_options_numeric_options",
+  "info": {
+    "displayName": "numericOptions"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "enumeration",
+      "enum": [
+        "Greater than",
+        "Greater than equal to",
+        "Less than",
+        "Less than equal to",
+        "Equal to",
+        "Not equal to"
+      ],
+      "required": true
+    },
+    "value": {
+      "type": "float",
+      "required": true
+    },
+    "nextQuestionId": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

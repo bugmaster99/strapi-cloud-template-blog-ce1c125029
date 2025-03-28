@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_download_app_download_apps",
+  "info": {
+    "displayName": "downloadApp"
+  },
+  "options": {},
+  "attributes": {
+    "showDownloadApp": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

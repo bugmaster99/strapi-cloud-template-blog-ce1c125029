@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_multiple_choice_multiple_choices",
+  "info": {
+    "displayName": "multipleChoice",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "options.options",
+      "required": true
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "errorMessage": {
+      "type": "string",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "required": false
+    },
+    "required": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "questionId": {
+      "type": "integer",
+      "unique": false,
+      "required": true
+    }
+  }
+}

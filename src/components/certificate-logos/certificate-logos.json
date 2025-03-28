@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_certificate_logos_certificate_logos",
+  "info": {
+    "displayName": "certificate-logos"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "certificate": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

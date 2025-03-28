@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_virohan_offer_what_we_offers",
+  "info": {
+    "displayName": "whatWeOffer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "What we offer"
+    },
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "VirohanOffers": {
+      "displayName": "virohanOffers",
+      "type": "component",
+      "repeatable": true,
+      "component": "virohan-offers.virohan-offers"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_lp_sets_apart_list_lp_sets_apart_lists",
+  "info": {
+    "displayName": "lpSetsApartList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

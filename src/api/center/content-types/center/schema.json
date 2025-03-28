@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "centers",
+  "info": {
+    "singularName": "center",
+    "pluralName": "centers",
+    "displayName": "center",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "centerName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "centerUri": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seoInformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-information.seo-information",
+      "required": true
+    },
+    "centerList": {
+      "displayName": "lpCenters",
+      "type": "component",
+      "repeatable": true,
+      "component": "lp-centers.lp-centers"
+    },
+    "stateCampusMap": {
+      "displayName": "stateCampusMapping",
+      "type": "component",
+      "repeatable": true,
+      "component": "state-campus-map.state-campus-mapping"
+    },
+    "expandedState": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::state.state"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_virohan_values_virohan_values",
+  "info": {
+    "displayName": "virohanValues"
+  },
+  "options": {},
+  "attributes": {
+    "virohanValue": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

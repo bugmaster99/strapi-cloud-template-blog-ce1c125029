@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_badge_badges",
+  "info": {
+    "displayName": "badge",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "showBadge": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

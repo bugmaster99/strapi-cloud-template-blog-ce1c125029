@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_lp_jouney_lp_jouneys",
+  "info": {
+    "displayName": "lpJouney",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "journeyList": {
+      "displayName": "lpJourneyList",
+      "type": "component",
+      "repeatable": true,
+      "component": "lp-journey-list.lp-journey-list",
+      "max": 3,
+      "min": 3
+    },
+    "showJourney": {
+      "type": "boolean",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

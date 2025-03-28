@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_district_districts",
+  "info": {
+    "displayName": "districts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "districtName": {
+      "type": "string"
+    },
+    "sendFbPixelEvent": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

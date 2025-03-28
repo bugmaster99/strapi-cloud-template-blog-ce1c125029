@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_partner_success_success_comps",
+  "info": {
+    "displayName": "SuccessComp"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

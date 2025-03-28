@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_emis_emis",
+  "info": {
+    "displayName": "emis"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "instalment": {
+      "type": "string",
+      "required": true
+    },
+    "discount": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

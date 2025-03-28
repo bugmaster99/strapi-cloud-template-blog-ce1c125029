@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_testiminial_data_testimonial",
+  "info": {
+    "displayName": "testimonialData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "testimonials": {
+      "displayName": "testimonials",
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonials.testimonials",
+      "required": true
+    },
+    "videos": {
+      "displayName": "videos",
+      "type": "component",
+      "repeatable": true,
+      "component": "videos.videos",
+      "required": true,
+      "max": 3,
+      "min": 3
+    },
+    "showTestimonialData": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

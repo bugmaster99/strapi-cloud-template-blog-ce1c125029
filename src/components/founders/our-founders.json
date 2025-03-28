@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_founders_our_founders",
+  "info": {
+    "displayName": "OurFounders"
+  },
+  "options": {},
+  "attributes": {
+    "Founder": {
+      "displayName": "Founder",
+      "type": "component",
+      "repeatable": true,
+      "component": "founder.founder"
+    },
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Founders"
+    }
+  }
+}

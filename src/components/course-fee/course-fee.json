@@ -1,0 +1,78 @@
+{
+  "collectionName": "components_course_fee_course_fees",
+  "info": {
+    "displayName": "courseFee",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headerBackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "titleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "descriptionFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "subtitleFontColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "strikePriceTitle": {
+      "type": "string"
+    },
+    "finalPriceTitle": {
+      "type": "string",
+      "required": true
+    },
+    "priceSubtitle": {
+      "type": "string",
+      "required": true
+    },
+    "feeCardBodyDescription": {
+      "type": "component",
+      "repeatable": true,
+      "component": "body-description.body-description",
+      "required": true,
+      "max": 6,
+      "min": 3
+    },
+    "brochureUrl": {
+      "type": "string",
+      "required": true
+    },
+    "detailPageUrl": {
+      "type": "string",
+      "required": true
+    },
+    "feeBadge": {
+      "type": "component",
+      "repeatable": false,
+      "component": "badge.badge"
+    }
+  }
+}

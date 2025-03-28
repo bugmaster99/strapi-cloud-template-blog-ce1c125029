@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_thankyou_screen_thankyou_screens",
+  "info": {
+    "displayName": "thankyouScreen",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "questionId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

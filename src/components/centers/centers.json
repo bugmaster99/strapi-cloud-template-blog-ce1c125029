@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_centers_centers",
+  "info": {
+    "displayName": "centers"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "stats": {
+      "type": "string",
+      "required": true
+    },
+    "batchStartDate": {
+      "type": "date",
+      "required": true
+    },
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

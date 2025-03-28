@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_policies",
+  "info": {
+    "singularName": "student-policy",
+    "pluralName": "student-policies",
+    "displayName": "Student Policy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-information.seo-information"
+    }
+  }
+}

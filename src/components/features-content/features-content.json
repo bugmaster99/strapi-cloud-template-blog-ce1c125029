@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_features_content_features_contents",
+  "info": {
+    "displayName": "featuresContent"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

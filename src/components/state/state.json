@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_state_states",
+  "info": {
+    "displayName": "state",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stateName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "campus": {
+      "displayName": "campus",
+      "type": "component",
+      "repeatable": true,
+      "component": "campus.campus"
+    }
+  }
+}

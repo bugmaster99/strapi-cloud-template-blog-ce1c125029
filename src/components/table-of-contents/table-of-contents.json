@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_table_of_contents_table_of_contents",
+  "info": {
+    "displayName": "TableOfContents",
+    "icon": "table"
+  },
+  "options": {},
+  "attributes": {
+    "tableOfContents": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

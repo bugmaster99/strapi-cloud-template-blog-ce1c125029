@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_lead_form_lead_forms",
+  "info": {
+    "displayName": "leadForm"
+  },
+  "options": {},
+  "attributes": {
+    "showLeadForm": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

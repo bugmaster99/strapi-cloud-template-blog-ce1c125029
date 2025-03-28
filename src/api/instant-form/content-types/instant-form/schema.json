@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instant_forms",
+  "info": {
+    "singularName": "instant-form",
+    "pluralName": "instant-forms",
+    "displayName": "InstantForm",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "controls": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form-control.form-control",
+      "required": true,
+      "max": 100
+    },
+    "url": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "sourceId": {
+      "type": "string",
+      "required": true
+    },
+    "centerId": {
+      "type": "string"
+    }
+  }
+}

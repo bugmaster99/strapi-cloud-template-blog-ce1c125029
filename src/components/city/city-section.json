@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_city_city_sections",
+  "info": {
+    "displayName": "citySection",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "showSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "cities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::city.city"
+    },
+    "headerName": {
+      "type": "string",
+      "default": "cities"
+    },
+    "cityHeader": {
+      "displayName": "header",
+      "type": "component",
+      "repeatable": false,
+      "component": "city-header.header"
+    }
+  }
+}

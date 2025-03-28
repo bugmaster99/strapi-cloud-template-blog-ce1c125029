@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_lp_speciality_list_lp_speciality_lists",
+  "info": {
+    "displayName": "lpSpecialityList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
